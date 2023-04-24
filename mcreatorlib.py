@@ -1,6 +1,6 @@
 reverse_shell = ""
 lhost = "192.168.0.101"
-lport = int(4444)
+lport = 4444
 encode_type = ""
 technique = ""
 
